@@ -1,9 +1,0 @@
-<?php
-
-include "settings.php";
-
-
-
-
-
-?>

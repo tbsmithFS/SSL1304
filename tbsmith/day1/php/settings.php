@@ -1,19 +1,19 @@
 <?php
 
-// no trailing slashes
+// no trailing slash
 
 $dayNum = 1;
+define("WORKING_DIR", "/Users/tbsmith/Sites/SSL1304/tbsmith/day$dayNum/php");
+define("WEB_DIR", "/tbsmith/day$dayNum/php");
 
-if (preg_match("toddbsmith.com", $_SERVER["SERVER_NAME"]) { //on the pi
+$dbConfig = array(
 
-	define("WD", "/var/www/SSL1304/tbsmith/day$dayNum/php");
+	'host'		=>	"127.0.0.1",
+	'username'	=>	"tbsmith",
+	'password'	=>	"pass",
+	'database'	=>	"SSL1304tbsmith"
 
-} else { // localhost
-
-	define("WD", "/Users/tbsmith/FullSail/SSL1304/tbsmith/day$dayNum/php");
-
-}
-
+	);
 
 
 ?>

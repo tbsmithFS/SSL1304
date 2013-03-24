@@ -1,12 +1,12 @@
 <?php
 
-#include 'settings.php';
+include("settings.php");
 
-header("Content-type: text/html");
+include("views/header.php");
 
+include("views/body.php");
 
-echo "hi";
-
+include("views/footer.php");
 
 
 ?>
