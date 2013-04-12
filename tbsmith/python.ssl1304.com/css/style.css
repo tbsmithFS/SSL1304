@@ -1,0 +1,274 @@
+
+/*
+ *
+ * green C7F9A2
+ * blue 9ADDE9
+ * orange FFD1A6
+ * red F9A2BB
+ * light blue D9FFFE
+ *
+ */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    min-width: 720px;
+    margin: 0;
+    padding: 0;
+
+    background: rgb(240,249,255); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%, rgba(203,235,255,1) 47%, rgba(161,219,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(240,249,255,1)), color-stop(47%,rgba(203,235,255,1)), color-stop(100%,rgba(161,219,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
+}
+
+#header {
+	padding: 0.5em;
+    font-size: 1em;
+}
+
+#bodyBand {
+    width: 100%;
+}
+
+#bodyLeft {
+    width: 70%;
+    float: left;
+}
+
+#bodyRight {
+    float: right;
+    background-color: #F9A2BB;
+}
+
+#bodyRight img {
+    margin-top: 4em;
+    width: 25em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.slogan {
+    margin-left: 2em;
+    font-size: 1.5em;
+}
+
+.navBar {
+    height:10%;
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+.navButton {
+    float: left;
+    width: 5em;
+    background-color: #FFD1A6;
+    margin-left: 1em;
+    margin-right: 0.4em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 4px;
+}
+
+#logoTitle {
+    font-size: 4em;
+}
+
+#footer {
+    clear: both;
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.storyRow {
+    padding: 1em;
+    margin: 1em;
+    background-color: #D9FFFE;
+    clear: both;
+    max-width: 100%;
+}
+
+.storyImage img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+.storyCategory {
+    color: #9ADDE9;
+}
+
+.storyTitle {
+    color: #FFD1A6;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#ads {
+    float: right;
+    background-color: #D9FFFE;
+}
+
+#adsTitle {
+    color: #FFD1A6;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.adImage img {
+    max-width: 12em;
+    border-radius: 4px;
+}
+
+.adTitle {
+    color: #FFD1A6;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+.adContent {
+    color: #000000;
+    font-weight: bold;
+}
+
+#storiesContainer {
+    float: left;
+}
+
+#copyrightInfo {
+    clear: both;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tablets */
+@media 
+(max-width: 1024px) {
+
+    #header {
+        font-size: 0.7em;
+        padding: 1em;
+    }
+
+    .navBar {
+        font-size: 1.0em;
+    }
+
+    .navButton {
+        margin-top: 1em;
+    }
+
+    #bodyLeft {
+        padding: 1em;
+        margin-top: 1em;
+    }
+
+    #bodyRight {
+        float: right;
+        width: 10em;
+    }
+
+    #ads {
+        width: 10em;
+    }
+
+    .adImage img {
+        max-width: 8em;
+    }
+
+    #footer {
+        width: 33em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* phones */
+@media 
+(max-width: 480px) {
+
+    html, body {
+        min-width: 300px;
+        width: 300px;
+    }
+
+    #header {
+        font-size: 0.5em;
+        padding: 2em;
+    }
+
+    .navButton {
+        padding-top: 0.5em;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        margin-top: 0.5em;
+        border-radius: 8px;
+    }
+
+    #bodyLeft {
+        clear: both;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #bodyRight {
+        display: none;
+    }
+
+    .storyImage img {
+        max-width: 10em;
+    }
+
+    .navBar {
+        width: 15em;
+    }
+
+    #ads {
+        display: none;
+    }
+
+    .navBarRow {
+        clear: both;
+    }
+
+    .slogan {
+        margin: 1em;
+        font-size: 1em;
+    }
+
+    #footer {
+        width: 18em;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .storyImage {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
