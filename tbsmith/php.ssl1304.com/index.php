@@ -4,7 +4,6 @@ include("settings/db.php");
 include("models/view.php");
 
 $view = new View();
-
 $view->printHeader();
 
 $data = array(
