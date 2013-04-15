@@ -1,1 +1,4 @@
-http://youtu.be/YQqJdHvsI2I
+First Video:
+	http://youtu.be/YQqJdHvsI2I
+Second Video:
+	http://youtu.be/Kkur3oSsTcY
