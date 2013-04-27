@@ -1,0 +1,124 @@
+JOBIES
+
+---------Team Members-----------------------------------------------------------
+Zach Stites
+Alyssa Nicoll
+
+---------Responsibilities-------------------------------------------------------
+FRONT END
+  -PS
+    -Wires
+    -Comps
+  -HTML
+  -CSS
+  -jQuery
+
+BACK END
+  -PY
+    -Log In / Log Out / Register -all
+    -Edit User Account Info -all
+    -Add/Update Job Listing -admin & employer
+    -Store User -admin(school), employer, students
+    -Update User -all
+    -Follow/Unfollow Job -students
+    -Follow/Unfollow Employer -student
+
+DB END
+  -SQL
+    Tables
+
+    -Students
+      -userId
+      -studentId
+      -jobId
+      -employerId
+      -imageURL
+      -firstName
+      -middleInitial
+      -lastName
+      -title
+      -about
+      -skills
+      -websiteURL
+      -twitterURL
+      -facebookURL
+      -youtubeURL
+    -Users
+      -userType
+      -userId 
+      -userName
+      -userPass
+    -UserEmails
+      -userID
+      -userEmail
+    -Jobs
+      -jobId
+      -userId
+      -name
+      -description
+      -datePosted
+      -exporationDate
+      -applicationLink
+      -salary
+    -Employers
+      -userId
+      -employerId
+      -employerName
+      -employerLocation
+      -employerAbout
+      -employerPhone
+      -employerWebsite
+    -UserTypes
+      -userType
+      -typeName
+
+
+
+---------Version 1 Features-----------------------------------------------------
+
+HOME PAGE -FRONT END -BACK END
+  - no user logged in
+    -job search
+    -log in / register option(version 2 - web.py - sessions)
+
+STUDENT DASHBOARD -FRONT END -BACK END
+  - search jobs
+  - followed jobs
+  - followed Employers
+  - user Account Info edit
+  - interested in (ruby, haml, as3, design)
+
+EMPLOYER DASHBOARD -FRONT END
+  -expiration Date
+  -notifications to employers(reminding them of the posting)
+
+SCHOOL DASHBOARD -FRONT END
+  -admin priviledges
+  -regular dashboard stuff
+
+---------Version 2 Features-----------------------------------------------------
+
+HOME PAGE -BACKEND
+- no user logged in
+  -job search
+  -log in / register option
+
+STUDENT DASHBOARD -POLISHING
+  - search jobs
+  - followed jobs
+  - followed Employers
+  - user Account Info edit
+  - interested in (ruby, haml, as3, design)
+
+EMPLOYER DASHBOARD -BACK END 
+  -expiration Date
+  -notifications to employers(reminding them of the posting)
+
+SCHOOL DASHBOARD -BACK END
+  -admin priviledges
+  -regular dashboard stuff
+
+ABOUT PAGE -FRONT END -BACK END
+
+TOUR PAGE -FRONT END -BACK END
+
