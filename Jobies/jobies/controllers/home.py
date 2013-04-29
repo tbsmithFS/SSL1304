@@ -20,5 +20,5 @@ class Home():
             view_model.get_view('login')
         elif action == 'register':
             view_model.get_view('register')
-
+ 
         view_model.get_view("footer")
