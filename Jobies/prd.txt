@@ -24,53 +24,63 @@ BACK END
     -Follow/Unfollow Employer -student
 
 DB END
-  -SQL
-    Tables
+  -SQL Tables
+         columnName   TYPE(LENGTH) [KEY]
 
     -Students
-      -userId
-      -studentId
-      -jobId
-      -employerId
-      -imageURL
-      -firstName
-      -middleInitial
-      -lastName
-      -title
-      -about
-      -skills
-      -websiteURL
-      -twitterURL
-      -facebookURL
-      -youtubeURL
+             userId   INT(255) Users.userId
+              jobId   INT(255)
+         employerId   INT(255) Employers.userId
+           imageURL   VARCHAR(50)
+          firstName   VARCHAR(30)
+      middleInitial   VARCHAR(1)
+           lastName   VARCHAR(30)
+           position   VARCHAR(6)
+              about   TEXT(50)
+         websiteURL   VARCHAR(50)
+         twitterURL   VARCHAR(50)
+        facebookURL   VARCHAR(50)
+         youtubeURL   VARCHAR(50)
+
+    -Skills
+             userId   INT(255) Users.userId
+              skill   VARCHAR(30)
+
+    -Programs
+             userId   INT(255) Users.userId
+            program   VARCHAR(15)
+
     -Users
-      -userType
-      -userId 
-      -userName
-      -userPass
+             userId   INT(255)
+           userName   VARCHAR(50)
+       userPassword   VARCHAR(50)
+         userTypeId   INT(1) UserTypes.typeId
+
     -UserEmails
-      -userID
-      -userEmail
+             userId   INT(255) Users.userId
+          userEmail   VARCHAR(50)
+
     -Jobs
-      -jobId
-      -userId
-      -name
-      -description
-      -datePosted
-      -exporationDate
-      -applicationLink
-      -salary
+             userId   INT(255) Users.userId
+              jobId   INT(255)
+           jobTitle   VARCHAR(50)
+        description   TEXT()
+         datePosted   DATETIME()
+     expirationDate   DATETIME()
+     applicationURL   VARCHAR(50)
+             salary   INT(255)
+
     -Employers
-      -userId
-      -employerId
-      -employerName
-      -employerLocation
-      -employerAbout
-      -employerPhone
-      -employerWebsite
+             userId   INT(255) Users.userId
+       employerName   VARCHAR(50)
+   employerLocation   VARCHAR(50)
+      employerAbout   VARCHAR(500)
+      employerPhone   VARCHAR(20)
+        employerURL   VARCHAR(50)
+
     -UserTypes
-      -userType
-      -typeName
+         userTypeId   INT(1)
+           userType   VARCHAR(8)
 
 
 
