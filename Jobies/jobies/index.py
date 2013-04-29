@@ -1,11 +1,10 @@
 #!/usr/bin/python
-# print "Content-type: text/html\n\n"
+print "Content-type: text/html\n\n"
 import cgi
 query = cgi.FieldStorage()
 from controllers.search_service import SearchService
 searchService = SearchService()
 
-print "Content-Type: text/html\n"
 
 
 if 'page' in query and 'action' in query:
@@ -27,7 +26,7 @@ elif page == 'user':
   from controllers.user import User
   user = User()
 
-  if 'action' not in query:
+  if 'action' not in query :
     action = 'register'
   else:
     action = query.getvalue('action')
