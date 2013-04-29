@@ -84,6 +84,17 @@ DB END
 
 
 
+---------Goals For Mon April 29th-----------------------------------------------
+
+-styles and markup
+-build register and login page
+-register, login working with forms
+-populate some data in jobs
+-pull down jobs on home page
+-create a clear user flow inside index for 
+  when there is and is not user (fake user sessions for now)
+
+
 ---------Version 1 Features-----------------------------------------------------
 
 HOME PAGE -FRONT END -BACK END

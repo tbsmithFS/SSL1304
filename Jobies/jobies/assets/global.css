@@ -2,8 +2,7 @@
 /* 
 lightSteelBlue    #6E7B8B 
 offWhite          #f5f5f5
-lightblue         #96FEFC
-sgiTeal           #388E8E
+FSORANGE          #E34919
 
 */
 
@@ -12,4 +11,22 @@ sgiTeal           #388E8E
   content: '';
   display: block;
   clear: both;
+}
+
+html{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 12px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  color: #E34919;
 }

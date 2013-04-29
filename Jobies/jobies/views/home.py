@@ -1,14 +1,37 @@
-<div class="container mainBody">
-  <p class="content">
-    This website is dedicated to my little sister&rsquo;s face. 
-    I love her dearly, and she loves her face. So what better way 
-    to exalt her than to give her face a gift? 
-    <span class="emp">Love you little sis. -a.n.</span>
-  </p>
-  <form action="/word_service/search" enctype="multipart/form-data" method="GET">
-    <h2>Search Users</h2>
-    <label for="searchTerm">searchTerm</label>
-    <input name="searchTerm" placeholder="searchTerm" id="searchTerm" value="bob">
-    <input type="submit" value="submit">
-  </form>
-</div>
+  <div class="hero">
+    <div class="inner_wrapper">
+     <img src="assets/images/hero_message.png" alt="Launch your career today!" class="hero_message">
+     <div class="searchblock">
+      <input type="text" class="main_search_bar">
+      <div class="search_button">
+        <img src="assets/images/spyglass_icon.png" alt="search" id="spyglass">
+      </div>
+      <div classs="clearfix"></div>
+      <h4 class="popular_searches_label">For instance you can search jobs like: Web Developer, Audio Engineer or Graphic Designer</h4>
+     </div>
+    </div>
+  </div>
+  <section class="features">
+    <div class="inner_wrapper">
+      <div class="feature_block">
+        <img src="assets/images/company_icon.png" class="feature_icons">
+        <h3>Company</h3>
+        <p>Post your companies open positions to display in front of the best and brightest young professionals in the industry. </p>
+      </div>
+      <div class="feature_block">
+        <img src="assets/images/student_icon.png" class="feature_icons">
+        <h3>Student</h3>
+        <p>Search listings of jobs in relation to your expertise and interests. These are real leads from employer looking to hire Full Sail University graduates.</p>
+      </div>
+      <div class="feature_block">
+        <img src="assets/images/connection_icon.png" class="feature_icons">
+        <h3>Connection</h3>
+        <p>Full Sail Career Connect helps bring jobs to our recent graduates while fulfilling the needs of company. This networking helps all parties.</p>
+      </div>
+    </div>
+  </section>
+  <div class="inner_wrapper">
+    <section class="results_wrapper">
+
+    </section>
+    <div class="clearfix"></div>

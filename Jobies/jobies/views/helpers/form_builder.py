@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 class FormBuilder():
 
     def __init__(self, validation_data={}, form_data={}):
@@ -69,6 +68,29 @@ class FormBuilder():
             print "value=\"" + option + "\"/>\n"
         print "</div>\n"
         print "</div>\n"
+
+    # def select(self, name, values, options):
+    #     if name in self.validation_data and \
+    #        self.validation_data[name] and \
+    #        self.validation_data[name]['has_error'] is True:
+    #         self.errorRow(name)
+    #     print "<div class=\"input_row\">\n"
+    #     print "<div class=\"input_left\">\n"
+    #     print name
+    #     print "</div>"
+    #     print "<div class=\"input_right\">\n"
+    #     for option in options:
+    #         if name in self.form_data and \
+    #            self.form_data.getvalue(name) == option:
+    #             checked = 'checked'
+    #         else:
+    #             checked = ''
+    #         print option
+    #         print "<select name=\"" + name + "\" "
+    #         print "type=\"radio\" " + checked + " "
+    #         print "value=\"" + option + "\"/>\n"
+    #     print "</div>\n"
+    #     print "</div>\n"
 
     def submit(self):
         print "<div class=\"input_row\">\n"

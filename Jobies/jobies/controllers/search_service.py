@@ -8,8 +8,8 @@ from models.DBConnector import DBConnector
 class SearchService():
 
     def __init__(self):
-        dbcon = DBConnector()
-        self.cnx = dbcon.get_connection()
+        dbconnector = DBConnector()
+        self.cnx = dbconnector.getConnection()
         self.cursor = self.cnx.cursor()
 
     def search(self, fn):
