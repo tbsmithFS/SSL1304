@@ -2,10 +2,11 @@
 print "Content-type: text/html\n\n"
 import cgi
 query = cgi.FieldStorage()
+print query
 from controllers.search_service import SearchService
 searchService = SearchService()
 
-
+print 111111
 
 if 'page' in query and 'action' in query:
   page = query.getvalue('page')
@@ -16,7 +17,7 @@ else:
   action = 'search'
   searchTerm = 'Web Developer'
 
-print ("PAGE : " + page)
+print 2
 
 if page == 'home':
   from controllers.home import Home
@@ -26,12 +27,10 @@ elif page == 'user':
   from controllers.user import User
   user = User()
 
-  if 'action' not in query :
+  if 'action' not in query:
     action = 'register'
   else:
     action = query.getvalue('action')
-
-  print "ACTION : " + action
 
   if action == 'register':
     user.register()
@@ -40,8 +39,7 @@ elif page == 'user':
     user.login(query)  
 
   elif action == 'addUser':
-    # validation_data = user.addUser(query)
-    user.addUser("A","A","1");
+    user.addUser(query.getvalue("userName"),query.getvalue("password"),query.getvalue("type"));
     # if validation_data['successful'] is True:
     #   user.show_success_page()
     # else:
@@ -52,7 +50,9 @@ elif page == 'user':
 
 elif page == 'search_service':
   if action == 'search':
-    searchService.search(searchTerm)
+    searchService.search(query.getvalue("searchTerm"))
+    print 3
+    print query
 
 else:
   # default if no page specified
