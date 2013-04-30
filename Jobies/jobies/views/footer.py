@@ -6,3 +6,7 @@
     </li>
   </ul>
 </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+# <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
