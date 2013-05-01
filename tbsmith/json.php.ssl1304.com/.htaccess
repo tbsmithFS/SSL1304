@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^([a-z_]+)$ index.php?controller=$1
+RewriteRule ^([a-z_]+)/([a-z_]+)$ index.php?controller=$1&action=$2
