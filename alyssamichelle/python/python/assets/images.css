@@ -1,0 +1,39 @@
+images.gif{
+  position: relative;
+  z-index: 9000;
+}
+
+.rotate50{
+  -webkit-transform:rotate(50deg);
+  -moz-transform:rotate(50deg);
+  -o-transform:rotate(50deg);
+  -ms-transform:rotate(50deg);
+}
+
+.rotate80{
+  -webkit-transform:rotate(80deg);
+  -moz-transform:rotate(80deg);
+  -o-transform:rotate(80deg);
+  -ms-transform:rotate(80deg);
+}
+
+.rotate120{
+  -webkit-transform:rotate(120deg);
+  -moz-transform:rotate(120deg);
+  -o-transform:rotate(120deg);
+  -ms-transform:rotate(120deg);
+}
+
+.rotate150{
+  -webkit-transform:rotate(150deg);
+  -moz-transform:rotate(150deg);
+  -o-transform:rotate(150deg);
+  -ms-transform:rotate(150deg);
+}
+
+.rotate180{
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+}
