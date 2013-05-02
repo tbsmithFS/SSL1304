@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.29)
 # Database: SSL_FINAL
-# Generation Time: 2013-05-02 01:01:34 +0000
+# Generation Time: 2013-05-02 03:16:39 +0000
 # ************************************************************
 
 
@@ -42,7 +42,14 @@ INSERT INTO `Dictionary` (`id`, `word`, `definition`, `trans_word`, `trans_defin
 VALUES
 	(1,'hell','hell','hell','hell','hell'),
 	(2,'text','definition','trans_word','trans_definition','toLang'),
-	(3,'text','','','',NULL);
+	(3,'text','','','',NULL),
+	(4,'text','','','',NULL),
+	(5,'text','','','',''),
+	(6,'text','','','',''),
+	(7,'text','','','','deu'),
+	(8,'text','','','','deu'),
+	(9,'text','','','','deu'),
+	(10,'coffee','value is not being set by search def in WordService class','value is not being set by search def in WordService class','value is not being set by search def in WordService class','deu');
 
 /*!40000 ALTER TABLE `Dictionary` ENABLE KEYS */;
 UNLOCK TABLES;
